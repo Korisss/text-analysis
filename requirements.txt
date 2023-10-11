@@ -1,2 +1,5 @@
 nltk
 pymorphy3
+RusPhonetic
+ruccent
+matplotlib
