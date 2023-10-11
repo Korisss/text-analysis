@@ -90,8 +90,12 @@ def count_letters(tokens: list[str]) -> dict[str, int]:
     letters_count = dict[str, int]()
     for token in tokens:
         for letter in token:
+            if letter == '\'':
+                continue
+
             if letter not in letters_count:
                 letters_count[letter] = 0
+
             letters_count[letter] += 1
 
     return letters_count
